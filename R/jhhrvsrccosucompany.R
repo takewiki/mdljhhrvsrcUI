@@ -38,8 +38,18 @@ buttoncosucompanyUI_left <- function() {
 
 
   res <- tagList(
+    tsui::mdl_text2(id = 'text_hrv_src_cosucompany_Fitem',label ='请输入项目' ,value ='往来单位' ),
+    tsui::mdl_text2(id = 'text_hrv_src_rditem_FNumber',label ='请输入编码' ,value ='' ),
+    tsui::mdl_text2(id = 'text_hrv_src_cosucompany_FName',label ='请输入名称' ,value ='' ),
+    
 
     shiny::actionButton(inputId = 'btn_hrv_src_view_cosucompany' , label = '预览表单数据'),
+    
+    shiny::actionButton(inputId = 'btn_hrv_src_add_cosucompany' , label = '新增表单数据'),
+    
+    tsui::mdl_text2(id = 'text_hrv_src_rditem_FNumber_delete',label ='请输入需要删除的编码' ,value ='' ),
+    
+    shiny::actionButton(inputId = 'btn_hrv_src_delete_cosucompany' , label = '删除表单数据')
 
 
   )

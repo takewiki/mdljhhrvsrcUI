@@ -1,7 +1,7 @@
 Package: mdljhhrvsrcUI
 Type: Package
 Title: Demo ui package for module in DMS.
-Version: 1.2.0
+Version: 1.2.1
 Author: hulilei
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: More about what it does (maybe more than one line)
