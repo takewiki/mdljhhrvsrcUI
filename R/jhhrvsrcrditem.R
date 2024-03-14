@@ -38,8 +38,19 @@ buttonsrcrditemUI_left <- function() {
 
 
   res <- tagList(
+    
+    tsui::mdl_text2(id = 'text_hrv_src_rditem_FOrg',label ='请输入组织' ,value ='江苏/分公司' ),
+    tsui::mdl_text2(id = 'text_hrv_src_rditem_FRDProjectManual',label ='请输入RD-项目' ,value ='RD-' ),
+    tsui::mdl_text2(id = 'text_hrv_src_rditem_FRDProject',label ='请输入系统项目名称' ,value ='' ),
 
     shiny::actionButton(inputId = 'btn_hrv_src_view_rditem' , label = '预览表单数据'),
+    
+    shiny::actionButton(inputId = 'btn_hrv_src_add_rditem' , label = '新增表单数据'),
+    tsui::mdl_text2(id = 'text_hrv_src_rditem_FRDProject_delete',label ='请输入需要删除的系统项目名称' ,value ='' ),
+    
+    shiny::actionButton(inputId = 'btn_hrv_src_delete_rditem' , label = '删除表单数据')
+    
+    
 
 
   )
