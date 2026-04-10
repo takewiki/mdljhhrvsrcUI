@@ -44,6 +44,8 @@ buttonsrcrditemUI_left <- function() {
     tsui::mdl_text2(id = 'text_hrv_src_rditem_FRDProject',label ='请输入系统项目名称' ,value ='' ),
 
     shiny::actionButton(inputId = 'btn_hrv_src_view_rditem' , label = '预览表单数据'),
+    tsui::mdl_download_button(id = 'dl_rditem',label = '下载查询记录到EXCEL'),
+    
     
     shiny::actionButton(inputId = 'btn_hrv_src_add_rditem' , label = '新增表单数据'),
     tsui::mdl_text2(id = 'text_hrv_src_rditem_FRDProject_delete',label ='请输入需要删除的系统项目名称' ,value ='' ),

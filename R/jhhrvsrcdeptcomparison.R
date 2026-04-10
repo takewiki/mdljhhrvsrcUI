@@ -40,6 +40,8 @@ buttondeptcomparisonUI_left <- function() {
   res <- tagList(
 
     shiny::actionButton(inputId = 'btn_hrv_src_view_deptcomparison' , label = '预览表单数据'),
+    
+    tsui::mdl_download_button(id = 'dl_deptcomparison',label = '下载查询记录到EXCEL'),
 
 
   )

@@ -40,6 +40,7 @@ buttonsrcrulevoucherUI_left <- function() {
   res <- tagList(
 
     shiny::actionButton(inputId = 'btn_hrv_src_view_rulevoucher' , label = '预览表单数据'),
+    tsui::mdl_download_button(id = 'dl_rulevoucher',label = '下载查询记录到EXCEL'),
 
 
   )
